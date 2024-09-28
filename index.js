@@ -1,5 +1,5 @@
 const { createStaffEmbed } = require('./functions/StaffEmbed');
-const { loadCommands } = require('./functions/commandHandler');
+const { loadCommands } = require('./functions/CommandHandler');
 const { handleCreateTicket } = require('./functions/CreateTicket');
 const { handleHelperSelection } = require('./functions/HandleHelperSelection');
 const { handleModeratorSelection } = require('./functions/HandleModeratorSection');

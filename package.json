@@ -20,7 +20,7 @@
     "discord.js-12": "^1.0.2",
     "discord.js-commando": "github:discordjs/Commando",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
+    "express": "^4.21.0",
     "mysql2": "^3.11.0",
     "nodemon": "^3.1.4",
     "uuid": "^9.0.0"

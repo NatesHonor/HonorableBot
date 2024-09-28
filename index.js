@@ -16,6 +16,7 @@ const path = require('path');
 const fs = require('fs');
 const config = require('./config.json');
 require('dotenv').config()
+require('express')
 
 const client = new Client({
   intents: [
@@ -25,6 +26,14 @@ const client = new Client({
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMembers,
   ],
+});
+
+app.get('/', (req, res) => {
+  res.send('Hello, this is your Discord bot!');
+});
+
+app.listen(port, () => {
+  console.log(`Express server is running on port ${port}`);
 });
 
 client.commands = new Collection();

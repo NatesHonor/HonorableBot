@@ -15,6 +15,7 @@ const onReady = require('./events/ready');
 const path = require('path');
 const fs = require('fs');
 const config = require('./config.json');
+require('dotenv').config
 
 const client = new Client({
   intents: [
@@ -27,8 +28,8 @@ const client = new Client({
 });
 
 client.commands = new Collection();
-
-client.login(config.token);
+console.log(process.env.DISCORD_TOKEN)
+client.login(process.env.DISCORD_TOKEN);
 loadCommands(client);
 client.once('ready', () => onReady(client));
 client.once('ready', async () => {

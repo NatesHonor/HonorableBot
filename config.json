@@ -1,0 +1,19 @@
+{
+  "clientId": "1119080731939966986",
+  "guildId": "1093621376721616906",
+  "host": "localhost",
+  "username": "HonorableBot",
+  "password": "tI@4b31sZIcFVU3l",
+  "database": "honorablebot",
+  "admin": "1130557413989290136",
+  "game_master": "1130557413989290136",
+  "staff": "1130557413989290136",
+  "staffMessageId": "1210181981560901672",
+  "positionsMessageId": "1216209145578131466",
+  "ticketCategoryId": "1105517719484371034",
+  "levelingChannel": "leveling",
+  "verificationChannel": "general",
+  "verificationChannelId": "1093621377577267222",
+  "verificationMessageID": "1209555749903016006",
+  "verifiedRole": "1190327186364842035"
+}

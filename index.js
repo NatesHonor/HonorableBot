@@ -39,7 +39,6 @@ app.listen(port, () => {
 });
 
 client.commands = new Collection();
-console.log(process.env.DISCORD_TOKEN)
 client.login(process.env.DISCORD_TOKEN);
 loadCommands(client);
 client.once('ready', () => onReady(client));

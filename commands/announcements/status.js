@@ -1,16 +1,6 @@
-const fs = require('fs');
-const path = require('path');
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const fetch = require('node-fetch');
-const envPath = path.resolve(__dirname, '../../api_keys.env');
 const { format } = require('date-fns');
-
-if (fs.existsSync(envPath)) {
-  require('dotenv').config({ path: envPath });
-  console.log('Environment variables loaded from', envPath);
-} else {
-  console.error('Error: .env file not found at', envPath);
-}
 
 async function fetchIncidentById(incidentId) {
   const apiToken = process.env.BETTERSTACK_API_TOKEN;
